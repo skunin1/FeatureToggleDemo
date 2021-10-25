@@ -15,7 +15,7 @@
 	<description>Demo project for Feature Toggle Server Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
-		<ff4j.version>1.8.1</ff4j.version>
+		<ff4j.version>1.8.10</ff4j.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
@@ -24,29 +24,20 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
-		<!--<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.thymeleaf.extras</groupId>
-			<artifactId>thymeleaf-extras-springsecurity5</artifactId>
-		</dependency>
-
-		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
+		<!--<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
-		</dependency>
+		</dependency>-->
 		<dependency>
 			<groupId>org.ff4j</groupId>
 			<artifactId>ff4j-spring-boot-starter</artifactId>
@@ -57,6 +48,16 @@
 			<artifactId>ff4j-web</artifactId>
 			<version>${ff4j.version}</version>
 		</dependency>
+		<dependency>
+		<groupId>org.ff4j</groupId>
+		<artifactId>ff4j-store-springjdbc</artifactId>
+		<version>${ff4j.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		<version>2.3.4.RELEASE</version>
+	</dependency>
 		</dependencies>
 
 	<build>

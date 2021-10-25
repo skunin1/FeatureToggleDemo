@@ -24,7 +24,7 @@ public class FF4JWebConfiguration extends SpringBootServletInitializer {
 @Bean
 public ServletRegistrationBean<FF4jDispatcherServlet> ff4jDispatcherRegistration(FF4jDispatcherServlet dispatcherServlet){
     ServletRegistrationBean<FF4jDispatcherServlet> registrationBean = new
-            ServletRegistrationBean<FF4jDispatcherServlet>(dispatcherServlet, "/demo-features/*");
+            ServletRegistrationBean<FF4jDispatcherServlet>(dispatcherServlet, "/ff4j-web-console/*");
     registrationBean.setName("ff4j-console");
     registrationBean.setLoadOnStartup(1);
     return registrationBean;
